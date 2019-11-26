@@ -49,6 +49,7 @@
             android:id="@+id/txtText"
             android:textSize="14sp"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:alpha="0.87"
             android:layout_width="match_parent"
             android:layout_marginBottom="3dp"
@@ -57,6 +58,36 @@
 
 
              />
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="132dp"
+            android:src="@drawable/photo"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="현재 당신의 모습, \n 어떤지 아십니까?"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="black"
+            android:textStyle="bold"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera"
+            android:text="CAMERA"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center"
+            >
+
+        </Button>
+
+
+
 
     </LinearLayout>
     <LinearLayout android:layout_width="match_parent" android:layout_height="30dp"
