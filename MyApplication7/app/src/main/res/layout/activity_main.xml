@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:theme="@style/AppTheme.Dark.Dialog"
     android:layout_gravity="center"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
     android:layout_height="600dp">
 
 
@@ -45,36 +45,39 @@
         android:id="@+id/linearLayout" android:layout_marginStart="0dp" android:layout_marginTop="45dp"
         android:layout_alignParentTop="true">
 
+
         <TextView
             android:id="@+id/txtText"
-            android:textSize="14sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:alpha="0.87"
             android:layout_width="match_parent"
-            android:layout_marginBottom="3dp"
-            android:text="@string/drunken_danger"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:alpha="0.87"
+            android:text="@string/drunken_danger"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
 
 
-             />
+            />
+
         <ImageView
-            android:layout_width="500px"
+            android:layout_width="138dp"
             android:layout_height="132dp"
-            android:src="@drawable/photo"
             android:layout_gravity="center"
             android:padding="10dp"
-            >
+            android:src="@drawable/photo">
+
 
         </ImageView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="현재 당신의 모습, \n 어떤지 아십니까?"
+            android:layout_height="wrap_content"
             android:padding="5dp"
+            android:text="현재 당신의 모습 \n 어떤지 아십니까?"
             android:layout_gravity="center"
-            android:textColor="black"
             android:textStyle="bold"></TextView>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,11 +88,32 @@
             >
 
         </Button>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@+id/addressbutton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressbutton"
+            android:layout_gravity="center"
+            android:text="ADDRESS"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
 
 
 
-    </LinearLayout>
+
+</LinearLayout>
     <LinearLayout android:layout_width="match_parent" android:layout_height="30dp"
         android:background="@color/primary_dark"
         android:orientation="vertical"
