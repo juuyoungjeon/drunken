@@ -13,6 +13,9 @@ import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.LocationManager;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -26,12 +29,22 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private static MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //SoundPool sound = new SoundPool(1, AudioManager.STREAM_ALARM, 0);
+
+        mp = MediaPlayer.create(this, R.raw.siren);
+        mp.setLooping(true);
+        mp.start();
+
 
         Button newpage = (Button) findViewById(R.id.bt1);
         newpage.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:/01011111111"));
                 startActivity(intent);
                 finish();
+                mp.stop();
             }
         });
 
