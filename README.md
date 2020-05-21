@@ -5,17 +5,17 @@
 
 <B>YOU CAN SEE
 
-**+<I>LAW<>** which informs awareness of drunk driving
+**+<I>LAW** which informs awareness of drunk driving
 
-**+_FAMILY PICTURE** which reminds family
+**+<I>FAMILY PICTURE** which reminds family
 
-**+_CALL BUTTON** that user can directly call the stored number
+**+<I>CALL BUTTON** that user can directly call the stored number
 
-**+_CAMERA BUTTON** that user can see user's red drunken face
+**+<I>CAMERA BUTTON** that user can see user's red drunken face
 
-**+_ADDRESS BUTTON** that user knows current location with **TOAST MESSAGE** so easy to call driver
+**+<I>ADDRESS BUTTON** that user knows current location with **TOAST MESSAGE** so easy to call driver
 
-**+_SIREN** keep sound until user call to driver only!!
+**+<I>SIREN** keep sound until user call to driver only!!
 
 ### FIRST VIEW
 ![졸2](https://user-images.githubusercontent.com/44489852/82537527-24e27d00-9b85-11ea-97e3-f7b388be6716.png)
