@@ -5,7 +5,7 @@
 
 <B>YOU CAN SEE
 
-**+_LAW** which informs awareness of drunk driving
+**+<I>LAW<>** which informs awareness of drunk driving
 
 **+_FAMILY PICTURE** which reminds family
 
